@@ -10,7 +10,7 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
-use think\Cache\Driver\Redis;
+use think\cache\driver\Redis;
 
 function _token_build($data, $path, $liveTime)
 {
