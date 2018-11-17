@@ -1,0 +1,72 @@
+2018-10-28 15:27:17 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:27:18 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:27:19 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:27:20 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:27:21 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:27:22 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:27:23 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:27:24 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:27:25 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:27:27 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:27:28 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:27:29 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:27:30 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:27:31 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:27:32 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:27:33 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:27:34 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:27:35 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:29:03 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:29:04 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:29:05 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '[' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 109"
+2018-10-28 15:29:13 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:29:14 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-28 15:29:15 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-29 13:48:53 pid:1 exception 'PDOException' with message 'SQL:INSERT INTO tb_data(humi,temp,update_time,uid) VALUES ('11.1','55.6','2018-10-29 13:48:52','1') SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_time' in 'field list'' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\gateway-worker\src\Lib\DbConnection.php:1766
+Stack trace:
+#0 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\gateway-worker\src\Lib\DbConnection.php(1824): GatewayWorker\Lib\DbConnection->execute('INSERT INTO tb_...', NULL)
+#1 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php(113): GatewayWorker\Lib\DbConnection->query('INSERT INTO tb_...')
+#2 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"data",...')
+#3 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"data",...')
+#4 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(650): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#7 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): call_user_func_array(Array, Array)
+#8 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Worker.php(2322): Workerman\Events\Select->loop()
+#9 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#10 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#11 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#12 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#13 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2018-10-29 13:48:53 pid:1 Worker process terminated
+2018-10-29 13:49:07 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2018-10-29 13:49:07 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2018-10-29 13:49:09 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2018-10-29 13:49:09 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2018-10-29 13:49:10 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2018-10-29 13:49:10 pid:1 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3
+2018-10-29 13:59:57 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 137"
+2018-10-29 13:59:58 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 137"
+2018-10-29 13:59:59 pid:1 Worker process terminated with ERROR: E_PARSE "syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php on line 137"
+2018-10-29 14:00:07 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-29 14:00:08 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-29 14:00:09 pid:1 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2018-10-29 14:08:05 pid:1 exception 'PDOException' with message 'SQL:INSERT INTO tb_data(humi,temp,update_time,uid) VALUES ('11.1','55.6','2018-10-29 14:08:05','1') SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_time' in 'field list'' in C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\gateway-worker\src\Lib\DbConnection.php:1766
+Stack trace:
+#0 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\gateway-worker\src\Lib\DbConnection.php(1824): GatewayWorker\Lib\DbConnection->execute('INSERT INTO tb_...', NULL)
+#1 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\Events.php(114): GatewayWorker\Lib\DbConnection->query('INSERT INTO tb_...')
+#2 [internal function]: Events::onMessage('7f0000010b54000...', '{"type":"data",...')
+#3 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(403): call_user_func('Events::onMessa...', '7f0000010b54000...', '{"type":"data",...')
+#4 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Connection\TcpConnection.php(650): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#7 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Events\Select.php(295): call_user_func_array(Array, Array)
+#8 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Worker.php(2322): Workerman\Events\Select->loop()
+#9 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\gateway-worker\src\BusinessWorker.php(197): Workerman\Worker->run()
+#10 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Worker.php(1315): GatewayWorker\BusinessWorker->run()
+#11 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#12 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#13 C:\Users\Administrator\Desktop\毕设 服务器\GatewayWorker\Applications\home\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2018-10-29 14:08:05 pid:1 Worker process terminated
